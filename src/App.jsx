@@ -20,7 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/post/:slug" element={<SinglePostPage />} />
         <Route path="/post" element={<PostPage />} />
-        <Route path="/ProjectPage" element={<ProjectPage />} />
+        <Route path="/Project" element={<ProjectPage />} />
       </Route>
     )
   );
