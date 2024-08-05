@@ -6,10 +6,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import About from "./pages/About";
-import SinglePost from "./pages/SinglePost";
-import Post from "./pages/Post";
-import Project from "./pages/Project";
+import AboutPage from "./pages/AboutPage";
+import SinglePostPage from "./pages/SinglePostPage";
+import PostPage from "./pages/PostPage";
+import ProjectPage from "./pages/ProjectPage";
 import MainLayout from "./layouts/MainLayout";
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/post/:id" element={<SinglePost />} />
-        <Route path="/post" element={<Post />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/post/:slug" element={<SinglePostPage />} />
+        <Route path="/post" element={<PostPage />} />
+        <Route path="/ProjectPage" element={<ProjectPage />} />
       </Route>
     )
   );
